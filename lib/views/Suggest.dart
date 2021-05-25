@@ -3,7 +3,7 @@
  * @Author: Mr.WJ
  * @Date: 2021-04-01 17:38:05
  * @LastEditors: Mr.WJ
- * @LastEditTime: 2021-05-18 16:49:27
+ * @LastEditTime: 2021-05-25 15:06:10
  */
 import 'package:flutter/material.dart';
 import 'package:flutter_app/routers/application.dart';
@@ -46,7 +46,7 @@ class SuggestState extends State<Suggest>{
                 height: 60,
                 width: 100,
                 child: ElevatedButton(onPressed: ()=>{
-                  ApplicationRoute.router.navigateTo(context, '/detail')
+                  ApplicationRoute.router.navigateTo(context, '/detail?id=asdfgh')
                 }, child: Text('123')),
                 
               )

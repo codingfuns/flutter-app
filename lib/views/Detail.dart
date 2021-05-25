@@ -3,12 +3,16 @@
  * @Author: Mr.WJ
  * @Date: 2021-04-01 17:38:05
  * @LastEditors: Mr.WJ
- * @LastEditTime: 2021-05-18 17:35:59
+ * @LastEditTime: 2021-05-25 15:04:42
  */
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 
 class Detail extends StatefulWidget{
+  
+  Detail({Key key, @required this.goodsId}):super(key: key);
+  final goodsId;
+
   @override
   createState()=>new Detailtate();
 }
@@ -38,6 +42,7 @@ class Detailtate extends State<Detail>{
               pagination: new SwiperPagination(),
             )
           ),
+          Text(widget.goodsId)
         ],
       ),
     );
